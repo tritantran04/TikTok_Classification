@@ -175,6 +175,6 @@ TikTok_Classification/
 
 ## Authors
 
-- Đỗ Nhật Nam — 22110122
-- Trần Trí Tân — 22110199
+- Trần Trí Tân
+- Đỗ Nhật Nam
 
