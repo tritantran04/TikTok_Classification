@@ -58,12 +58,13 @@ Models involved: **TimeSformer** (visual), **CLAP / WavLM / Whisper large-v3** (
 | Reproduce best [attention fusion] | Multilingual BERT | TimeSformer base | 79.61 | 79.35 | 86.07 | 85.98 |
 
 **Audio + Video + Text (original labels):**
-
+![Audio Video Text pipeline](Image/Audio-Video-Text.png)
 | Name | Text Model | Video Model | Audio Model | Test Acc. | Test F1 |
 |---|---|---|---|---|---|
 | AVT Base | Multilingual BERT | TimeSformer base | Whisper large-v3 | 86.97 | 86.93 |
 
 **Audio + Video, original labels:**
+![Audio Video pipeline](Image/Audio-Video.png)
 
 | Name | Video Model | Audio Model | Test Acc. | Test F1 |
 |---|---|---|---|---|
@@ -80,7 +81,11 @@ Models involved: **TimeSformer** (visual), **CLAP / WavLM / Whisper large-v3** (
 | Name | Video Model | Audio Model | Test Acc. | Test F1 |
 |---|---|---|---|---|
 | AV Relabel | TimeSformer long | WavLM large | 90.87 | 90.86 |
+
+![reference pipeline](Image/Reference.png)
+| Name | Video Model | Audio Model | Test Acc. | Test F1 |
 | **AV SlicingVideo** (video segmentation) | **TimeSformer long** | **WavLM large** | **93.28** | **93.23** |
+
 
 **Single-modality contribution (audio-only vs. text extracted from audio/frame):**
 
