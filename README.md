@@ -169,8 +169,8 @@ TikTok_Classification/
      ├── Audio-Video.png                    # Audio-Video pipeline
      ├── Baseline.png                       # Paper's pipeline
      ├── Inference.png                      # Inference pipeline
-     ├── cm_best (after relable).png        # Confusion matrix of best model after relable
-     ├── cm_best (before relable).png       # Confusion matrix of best model before relable
+     ├── cm_best_(after_relable).png        # Confusion matrix of best model after relable
+     ├── cm_best_(before_relable).png       # Confusion matrix of best model before relable
      └── cm_slicingVideo.png                # Confusion matrix of best model after relable applied slicingvideo
 ```
 
