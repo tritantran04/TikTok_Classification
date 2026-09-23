@@ -37,6 +37,7 @@ Video duration varies widely (up to 600 seconds for Adult Content / Harmful Cont
 ## Methodology
 
 **Baseline (reproduced from the reference paper):** TimeSformer base (8 frames) for visual features + Multilingual BERT for text features (ASR via Whisper large-v3 + OCR via EasyOCR), combined with late fusion / attention-based fusion.
+![Reference paper's pipeline](Image/baseline.png)
 
 **Improvements studied in this research:**
 - **Audio feature encoders:** replacing "speech-to-text only" processing with direct audio embeddings, comparing **CLAP**, **WavLM large**, and **Whisper large-v3** (encoder only) as audio backbones.
