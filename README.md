@@ -59,12 +59,15 @@ Models involved: **TimeSformer** (visual), **CLAP / WavLM / Whisper large-v3** (
 
 **Audio + Video + Text (original labels):**
 ![Audio Video Text pipeline](Image/Audio-Video-Text.png)
+*Audio Video Text pipeline*
+
 | Name | Text Model | Video Model | Audio Model | Test Acc. | Test F1 |
 |---|---|---|---|---|---|
 | AVT Base | Multilingual BERT | TimeSformer base | Whisper large-v3 | 86.97 | 86.93 |
 
 **Audio + Video, original labels:**
 ![Audio Video pipeline](Image/Audio-Video.png)
+*Audio Video pipeline*
 
 | Name | Video Model | Audio Model | Test Acc. | Test F1 |
 |---|---|---|---|---|
@@ -83,6 +86,8 @@ Models involved: **TimeSformer** (visual), **CLAP / WavLM / Whisper large-v3** (
 | AV Relabel | TimeSformer long | WavLM large | 90.87 | 90.86 |
 
 ![Inference pipeline](Image/Inference.png)
+*Inference (video slicing) pipeline*
+
 
 | Name | Video Model | Audio Model | Test Acc. | Test F1 |
 | **AV SlicingVideo** (video segmentation) | **TimeSformer long** | **WavLM large** | **93.28** | **93.23** |
@@ -117,10 +122,10 @@ This ~4.8-point gain over the reproduced reference baseline came from three impr
 - **Manually re-labeling the dataset:** correcting mislabeled/overlapping samples (concentrated in Harmful Content) improved macro F1 by **+1.57 points** using the exact same architecture and hyperparameters, confirming that label quality was a real, measurable bottleneck rather than a modeling limitation.
 - **Video segmentation at inference:** splitting long videos into clips and aggregating predictions with a harm-priority rule improved macro F1 by a further **+2.37 points**, with no re-training required. This was the single largest improvement in the study and is the most practically reusable, since it can be applied to any existing video classification pipeline without changing its architecture.
 
-![cm_best (before relable)](Image/cm_best (before relable).png)
+![cm_best (before relable)](Image/cm_best(before relable).png)
 *Confusion matrix of the best model before relable.*
 
-![cm_best (after relable)](Image/cm_best (after relable).png)
+![cm_best (after relable)](Image/cm_best(after relable).png)
 *Confusion matrix of the best model after relable.*
 
 ![cm_slicingVideo](Image/cm_slicingVideo.png)
