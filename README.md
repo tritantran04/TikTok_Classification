@@ -82,7 +82,8 @@ Models involved: **TimeSformer** (visual), **CLAP / WavLM / Whisper large-v3** (
 |---|---|---|---|---|
 | AV Relabel | TimeSformer long | WavLM large | 90.87 | 90.86 |
 
-![reference pipeline](Image/Reference.png)
+![Inference pipeline](Image/Inference.png)
+
 | Name | Video Model | Audio Model | Test Acc. | Test F1 |
 | **AV SlicingVideo** (video segmentation) | **TimeSformer long** | **WavLM large** | **93.28** | **93.23** |
 
