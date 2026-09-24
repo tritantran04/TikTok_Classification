@@ -1,6 +1,6 @@
 # A Multimodal Pipeline for Classifying TikTok Videos by Child-Safety Level
 
-This repository accompanies a research study on **multimodal deep learning for child-safety content classification on TikTok**, classifying videos into four levels: **Safe, Adult Content, Harmful Content, and Suicide**.
+This repository is a research study on **multimodal deep learning for child-safety content classification on TikTok**, classifying videos into four levels: **Safe, Adult Content, Harmful Content, and Suicide**.
 
 > **Note on repository scope:** This repository hosts a selection of the notebooks used during the research (training experiments and supplementary content analysis). It is not a packaged, end-to-end software release — some code, intermediate artifacts, and the processed dataset used in the study have not been published here.
 
