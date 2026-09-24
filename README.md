@@ -93,7 +93,7 @@ Models involved: **TimeSformer** (visual), **CLAP / WavLM / Whisper large-v3** (
 | **AV SlicingVideo** (video segmentation) | **TimeSformer long** | **WavLM large** | **93.28** | **93.23** |
 
 
-**Single-modality contribution (audio-only vs. text extracted from audio/frame):**
+**Single-modality contribution:**
 
 | Modality | Test Acc. | Test F1 |
 |---|---|---|
